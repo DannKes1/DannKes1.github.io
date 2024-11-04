@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUS - Diagnóstico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>SUS</h1>
+    <p>Selecione o seu sintoma</p>
+    <select id="symptom">
+      <option value="" disabled selected>Escolha um sintoma</option>
+      <option value="headache">Dor de cabeça</option>
+      <option value="fever">Febre</option>
+      <option value="cough">Tosse</option>
+      <option value="fatigue">Fadiga</option>
+    </select>
+    <button onclick="diagnose()">Diagnosticar</button>
+    <button onclick="clearFields()">Limpar Campos</button>
+    <p id="error-message">ERRO. Já existe um paciente com esse sintoma!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
