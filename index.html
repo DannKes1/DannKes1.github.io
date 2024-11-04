@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUS - Diagnóstico</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Teste de Velocidade de Internet</title>
+  <link rel="stylesheet" href="Assets/styles.css">
 </head>
 
 <body>
+  <div id="jumpscareImage" style="background-image: url('Assets/image/img2.png'); z-index: 1;"></div>
   <div class="container">
-    <h1>SUS</h1>
-    <p>Selecione o seu sintoma</p>
-    <select id="symptom">
-      <option value="" disabled selected>Escolha um sintoma</option>
-      <option value="headache">Dor de cabeça</option>
-      <option value="fever">Febre</option>
-      <option value="cough">Tosse</option>
-      <option value="fatigue">Fadiga</option>
-    </select>
-    <button onclick="diagnose()">Diagnosticar</button>
-    <button onclick="clearFields()">Limpar Campos</button>
-    <p id="error-message">ERRO. Já existe um paciente com esse sintoma!</p>
+    <h1 class="title">Teste de Velocidade de Internet</h1>
+    <div id="speedometer">
+      <div class="needle"></div>
+      <div class="speed">0 Mbps</div>
+    </div>
+    
+    <button id="start-test">Iniciar Teste</button>
+    <div class="result hidden">
+      <h2>Resultado:</h2>
+      <p id="result-text">Sua velocidade de internet é...</p>
+    </div>
   </div>
-  <script src="script.js"></script>
+  <script src="Assets/script.js"></script>
 </body>
 
 </html>
